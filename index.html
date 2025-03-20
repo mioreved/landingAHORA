@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <!-- JS -->
+    <script src="/js/main.js"></script>
+
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="/css/themify-icons.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CDN DE TAILWIND -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      /* Para poner custom css */
+
+      
+    </style>
+
+    <!-- CDN PARA CAROUSEL -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>AHORA HUANCHACO</title>
+  </head>
+  <body class="bg-white font-[Poppins] text-gray-900 relative">
+    <div class="">
+      <!-- PRELOADER -->
+      <!-- <div class="bg-preloader-white"></div>
+     <div class="preloader-white">
+       <div class="mainpreloader">
+       <span></span>
+       </div>
+     </div> -->
+      <!-- preloader end -->
+
+      <!--**************************** HEADER************************** -->
+      <header id="header" class="w-full mx-auto fixed top-0 left-0 z-100 text-white bg-transparent transition-all duration-700">
+         <!-- Subnavegación -->
+        <div id="subnavbar" class="text-xs font-extralight py-3 px-24 transition-all duration-300">
+          <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Contacto -->
+            <div class="flex items-center space-x-5">
+              <div class="space-x-2">
+                <i class="ti-mobile"></i>
+                <span>+51 909891796</span>
+              </div>
+              <span class="space-x-2 hover:text-blue-500">
+                <i class="ti-email"></i>
+                <a href="mailto:ahorahuanchaco@gmail.com">ahorahuanchaco@gmail.com</a>
+              </span>
+            </div>
+            <!-- Redes sociales e Idioma -->
+            <div class="flex items-center space-x-5">
+              <!-- IDIOMA -->
+              <div class="flex space-x-3 items-center justify-center hover:text-blue-500 cursor-pointer">
+                <i class="ti-world"></i>
+                <span>
+                Español
+                </span>
+                <i class="ti-angle-down"></i>
+              </div>
+              <!-- Redes sociales -->
+              <div class="flex space-x-4">
+                <a href="#" class="hover:text-blue-500"><span class="ti-facebook"></span></a>
+                <a href="#" class="hover:text-blue-500"><span class="ti-instagram"></span></a>
+                <a href="#" class="hover:text-blue-500"><span class="ti-linkedin"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Barra de Navegación -->
+        <div class="px-24 pb-2">
+          <div class="max-w-7xl mx-auto flex justify-between items-center uppercase">
+            <a href="index.html">
+              <img src="/images/logo.png" width="618" height="746" alt="logo" class="h-12 w-auto logo" />
+            </a>
+            <nav class="hidden md:flex space-x-6">
+              <a href="#" class="hover:text-blue-500">Inicio</a>
+              <a href="#" class="hover:text-blue-500">Nosotros</a>
+              <a href="#" class="hover:text-blue-500">Ruta Huanchaco</a>
+              <a href="#" class="hover:text-blue-500">Asociados</a>
+              <a href="#" class="hover:text-blue-500">Actividades</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      
+
+      <!--**************************** HERO************************** -->
+      <section id="hero"
+        class="text-white w-full h-screen relative bg-cover bg-center bg-no-repeat bg-[linear-gradient(rgba(0,0,0,0.300),rgba(0,0,0,0.300)),url('/images/HCO6.jpg')]">
+        <!-- HERO CONTAINER -->
+        <div
+          class="text-left w-[90%] h-screen max-w-7xl mx-auto whitespace-normal flex flex-col items-start justify-center">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-normal mb-4 tracking-wide mx-4 sm:mx-8 md:mx-10 lg:mx-12 xl:mx-16">
+            ASOCIACIÓN DE HOTELES, RESTAURANTES Y AFINES DE HUANCHACO
+          </h1>
+
+          <p class="text-xl md:text-2xl mb-6 font-normal uppercase mx-4 sm:mx-8 md:mx-10 lg:mx-12 xl:mx-16">
+            Recorre nuestra Ruta Gastronómica y Turística
+          </p>
+
+          <a
+            class="mt-6 inline-block bg-blue-500 py-3 px-9 shadow-lg hover:bg-blue-700 mx-4 sm:mx-8 md:mx-10 lg:mx-12 xl:mx-16"
+            href="index.html"
+          >
+            Explorar
+          </a>
+        </div>
+      </section>
+
+      <!-- ***********************QUIENES SOMOS************************* -->
+      <section class="mt-16 mb-16 w-full py-12">
+        <!-- TITULO: ¿QUIENES SOMOS? -->
+        <div class="w-full text-center text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-gray-800 mb-8">
+          <h2 class="uppercase">SOBRE NOSOTROS</h2>
+
+          <!-- Linea decorativa -->
+          <span
+            class="block border-t-4 border-yellow-400 w-[87px] lg:w-[107px] xl:w-[117px] mx-auto my-4"
+          ></span>
+        </div>
+
+        <!-- MISIÓN -->
+        <div class="mx-auto grid grid-cols-1 md:grid-cols-2 items-center mt-16">
+          <!-- Imagen de Misión -->
+          <div class="h-96 relative overflow-hidden group shine-effect order-1">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-all duration-1000"
+              style="background-image: url('/images/HCO4.jpg');"
+              data-animate
+            ></div>
+          </div>
+        
+          <!-- Texto de Mision -->
+          <div class="py-9 px-4 sm:px-8 md:px-10 lg:px-12 xl:px-16 order-2">
+            <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-800 text-center mb-4">
+              MISIÓN
+            </h3>
+            <p class="text-base font-light text-gray-500 leading-8">
+              Promover el desarrollo del sector turístico a través de la
+              colaboración con empresas, instituciones y la comunidad,
+              impulsando iniciativas que fortalezcan la competitividad y
+              sostenibilidad del destino.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- VISIÓN -->
+        <div class="mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
+          <!-- Texto de Visión -->
+          <div class="py-9 px-4 sm:px-8 md:px-10 lg:px-12 xl:px-16 order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-800 text-center mb-4">
+              VISIÓN
+            </h3>
+            <p class="text-base font-light text-gray-500 leading-8">
+              Ser la principal organización de referencia en el sector turístico
+              del norte del Perú, reconocida por su compromiso con la
+              excelencia, la innovación y la sostenibilidad, contribuyendo al
+              posicionamiento de la localidad como un destino turístico de
+              primer nivel en Perú y el mundo.
+            </p>
+          </div>
+        
+          <!-- Fotografia -->
+          <div class="h-96 relative overflow-hidden group shine-effect order-1 md:order-2">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-all duration-1000"
+              style="background-image: url('/images/HCO3.jpg');"
+              data-animate
+            ></div>
+          </div>
+        </div>
+        
+      </section>
+
+
+      <!-- ***********************ASOCIADOS************************* -->
+      <section id="cifras" class="mt-16 mb-24 w-full relative bg-[url('/images/ondas.svg')] bg-cover bg-center">        
+        
+        <!-- <div class="bg-gradient-to-r from-blue-700 to-blue-950 w-full"> -->
+        <div class="relative z-20 max-w-7xl mx-auto px-4 py-8 md:px-8 md:py-12">
+        
+          <div class="max-w-7xl mx-auto my-4">
+            <div class="max-w-5xl mx-auto text-center">
+              <h2 class="pb-1 text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-white uppercase">AHORA Huanchaco en Cifras</h2>
+
+            </div>
+            <dl class="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-4 sm:gap-8">
+              <div class="flex flex-col">
+                <dt class="order-2 mt-2 text-lg leading-6 font-medium text-white">Hoteles Afiliados</dt>
+                <dd class="order-1 text-3xl lg:text-5xl font-extrabold text-white">45</dd>
+              </div>
+              <div class="flex flex-col mt-10 sm:mt-0">
+                <dt class="order-2 mt-2 text-lg leading-6 font-medium text-white">Restaurantes Asociados</dt>
+                <dd class="order-1 text-3xl lg:text-5xl font-extrabold text-white">50</dd>
+              </div>
+              <div class="flex flex-col mt-10 sm:mt-0">
+                <dt class="order-2 mt-2 text-lg leading-6 font-medium text-white">Negocios Afines</dt>
+                <dd class="order-1 text-3xl lg:text-5xl font-extrabold text-white">35</dd>
+              </div>
+              <div class="flex flex-col mt-10 sm:mt-0">
+                <dt class="order-2 mt-2 text-lg leading-6 font-medium text-white">Años de Trayectoria</dt>
+                <dd class="order-1 text-3xl lg:text-5xl font-extrabold text-white">5+</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+          
+        
+      </section>
+
+
+
+
+
+
+      
+      <!-- ***********************RUTA HUANCHACO************************* -->
+      <section id="ruta-huanchaco" class="mt-16 mb-16 w-full max-w-7xl mx-auto">
+        <!-- TITULO: RUTA HUANCHACO -->
+        <div class="w-full text-center text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-gray-800 mb-8">
+          <h2 class="uppercase">RUTA HUANCHACO</h2>
+
+          <!-- Línea decorativa -->
+          <span
+            class="block border-t-4 border-yellow-400  w-[87px] lg:w-[107px] xl:w-[117px] mx-auto my-4"
+          ></span>
+        </div>
+
+        <!-- GALERIA -->
+        <div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 py-9 px-4 sm:px-8 md:px-10 lg:px-12 xl:px-16 md:mx-16">
+            <!----------------------- TARJETA 1 ----------------------->
+            <div class="relative w-full h-[250px] sm:h-[300px] lg:h-[350px]  group overflow-hidden shadow-lg" data-aos="fade-up">
+              <!-- Imagen con efecto de zoom en hover -->
+              <img src="/images/HCO4.jpg" alt="Image 1"
+                class="w-full h-full object-cover transition-transform duration-500 transform scale-100 group-hover:scale-107">
+            
+              <!-- Degradado con fondo oscuro -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            
+              <!-- Contenido de texto sobre la imagen -->
+              <div class="absolute bottom-5 left-5 text-white">
+                <h3 class="text-xl font-bold">Título de la Sección</h3>
+                <p class="text-sm mt-1">Descripción corta sobre esta imagen.</p>
+              </div>
+            </div>
+           <!----------------------- TARJETA 2 ----------------------->
+            <div class="relative  w-full h-[250px] sm:h-[300px] lg:h-[350px]  group overflow-hidden shadow-lg" data-aos="fade-up">
+              <img
+                src="/images/HCO7.jpg"
+                alt="Image 1"
+                class="w-full h-full object-cover transition-transform duration-500 transform scale-100 group-hover:scale-107"
+              />
+              <!-- Degradado con fondo oscuro -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            
+              <!-- Contenido de texto sobre la imagen -->
+              <div class="absolute bottom-5 left-5 text-white">
+                <h3 class="text-xl font-bold">Título de la Sección</h3>
+                <p class="text-sm mt-1">Descripción corta sobre esta imagen.</p>
+              </div>
+            </div>
+           <!----------------------- TARJETA 3 ----------------------->
+            <div class="relative  w-full h-[250px] sm:h-[300px] lg:h-[350px]  group overflow-hidden shadow-lg" data-aos="fade-up">
+              <img
+                src="/images/HCO8.jpg"
+                alt="Image 1"
+                class="w-full h-full object-cover transition-transform duration-500 transform scale-100 group-hover:scale-107"
+              />
+              <!-- Degradado con fondo oscuro -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            
+              <!-- Contenido de texto sobre la imagen -->
+              <div class="absolute bottom-5 left-5 text-white">
+                <h3 class="text-xl font-bold">Título de la Sección</h3>
+                <p class="text-sm mt-1">Descripción corta sobre esta imagen.</p>
+              </div>
+            </div>
+           <!----------------------- TARJETA 4 ----------------------->
+            <div class="relative  w-full h-[250px] sm:h-[300px] lg:h-[350px]  group overflow-hidden shadow-lg" data-aos="fade-up">
+              <img
+                src="/images/HCO2.jpg"
+                alt="Image 1"
+                class="w-full h-full object-cover transition-transform duration-500 transform scale-100 group-hover:scale-107"
+              />
+              <!-- Degradado con fondo oscuro -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            
+              <!-- Contenido de texto sobre la imagen -->
+              <div class="absolute bottom-5 left-5 text-white">
+                <h3 class="text-xl font-bold">Título de la Sección</h3>
+                <p class="text-sm mt-1">Descripción corta sobre esta imagen.</p>
+              </div>
+            </div>
+           <!----------------------- TARJETA 5 ----------------------->
+            <div class="relative  w-full h-[250px] sm:h-[300px] lg:h-[350px]  group overflow-hidden shadow-lg" data-aos="fade-up">
+              <img
+                src="/images/HCO1.jpg"
+                alt="Image 1"
+                class="w-full h-full object-cover transition-transform duration-500 transform scale-100 group-hover:scale-107"
+              />
+              <!-- Degradado con fondo oscuro -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            
+              <!-- Contenido de texto sobre la imagen -->
+              <div class="absolute bottom-5 left-5 text-white">
+                <h3 class="text-xl font-bold">Título de la Sección</h3>
+                <p class="text-sm mt-1">Descripción corta sobre esta imagen.</p>
+              </div>
+            </div>
+           <!----------------------- TARJETA 6 ----------------------->
+            <div class="relative w-full h-[250px] sm:h-[300px] lg:h-[350px] group overflow-hidden shadow-lg" data-aos="fade-up">
+              <img
+                src="/images/HCO4.jpg"
+                alt="Image 1"
+                class="w-full h-full object-cover transition-transform duration-500 transform scale-100 group-hover:scale-107"
+              />
+              <!-- Degradado con fondo oscuro -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            
+              <!-- Contenido de texto sobre la imagen -->
+              <div class="absolute bottom-5 left-5 text-white">
+                <h3 class="text-xl font-bold">Título de la Sección</h3>
+                <p class="text-sm mt-1">Descripción corta sobre esta imagen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+<!-- ***********************ACTIVIDADES*************************  --> 
+      <section id="ruta-huanchaco" class="mt-16 mb-16 w-full max-w-7xl mx-auto">
+        <!-- TITULO: PROXIMAS ACTIVIDADES -->
+        <div class="w-full text-center text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-gray-800 mb-8">
+          <h2 class="uppercase">PRÓXIMAS ACTIVIDADES</h2>
+
+          <!-- Línea decorativa -->
+          <span
+            class="block border-t-4 border-yellow-400  w-[87px] lg:w-[107px] xl:w-[117px] mx-auto my-4"
+          ></span>
+        </div>
+
+        <!-- TARJETAS CON LAS ACTIVIDADES -->
+        <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+          <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10">
+            <!-- TARJETA DE ACTIVIDAD 1 -->
+              <div class="w-full rounded overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.5)]">   
+                <div class="relative">
+                  <img class="w-full h-[250px] object-cover"
+                    src="/images/aereo.jpg"
+                    alt="Festival aereo">
+                  <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                  </div>  
+                </div>
+                <!-- TEXTO DESCRIPTIVO -->
+                  <div class="px-6 py-4">
+                    <ul class="space-y-4 text-sm md:text-base">
+                      <!-- Titulo de actividad -->
+                      <li class="font-semibold text-lg inline-block">Festival aereo 
+                      </li>
+                      <!-- Descripcion de actividad -->
+                      <li class="text-gray-500">
+                        Un espectáculo impresionante con acrobacias aéreas, exhibiciones de aviones y vuelos históricos que desafían la gravedad.
+                      </li>
+                      <li class="flex items-center space-x-3">
+                        <i class="ti-time"></i>
+                        <span>9 am</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                        <i class="ti-calendar"></i>
+                        <span>29 de marzo</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                        <i class="ti-location-pin"></i>
+                        <span>Av la Ribera S/N-Huanchaco, Trujillo-Perú</span>
+                      </li>
+                    </ul>
+                  </div>                  
+              </div>
+              <!-- TARJETA DE ACTIVIDAD 2 -->
+              <div class="w-full rounded overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.5)]">
+                  <a href="#"></a>
+                  <div class="relative">
+                      <a href="#">
+                          <img class="w-full h-[250px] object-cover"
+                              src="/images/gastronomica.webp"
+                              alt="Sunset in the mountains">
+                          <div
+                              class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                          </div>
+                      </a>
+                  </div>
+                  <!-- TEXTO DESCRIPTIVO -->
+                  <div class="px-6 py-4">
+                    <ul class="space-y-4 text-sm md:text-base">
+                      <!-- Titulo de actividad -->
+                      <li class="font-semibold text-lg inline-block">Feria Gastronómica 
+                      </li>
+                      <!-- Descripcion de actividad -->
+                      <li class="text-gray-500">
+                        Un evento donde podrás disfrutar de los mejores sabores locales e internacionales, con degustaciones, chefs en vivo y experiencias culinarias únicas
+                      </li>
+                      <li class="flex items-center space-x-3">
+                        <i class="ti-time"></i>
+                        <span>9 am</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                        <i class="ti-calendar"></i>
+                        <span>29 de marzo</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                        <i class="ti-location-pin"></i>
+                        <span>Av la Ribera S/N-Huanchaco, Trujillo-Perú</span>
+                      </li>
+                    </ul>
+                  </div>                     
+              </div>
+              <!-- TARJETA DE ACTIVIDAD 3 -->
+              <div class="w-full rounded overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.5)]">
+      
+                  <a href="#"></a>
+                  <div class="relative">
+                      <a href="#">
+                          <img class="w-full h-[250px] object-cover"
+                              src="/images/artesanal.jpg">
+                          <div
+                              class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                          </div>
+                      </a>
+                  </div>
+                  <!-- TEXTO DESCRIPTIVO -->
+                  <div class="px-6 py-4">
+                    <ul class="space-y-4 text-sm md:text-base">
+                      <!-- Titulo de actividad -->
+                      <li class="font-semibold text-lg inline-block">Feria Artesanal
+                      </li>
+                      <!-- Descripcion de actividad -->
+                      <li class="text-gray-500">
+                        Un espacio donde artesanos locales exhiben sus creaciones únicas en cerámica, textiles y más, celebrando la cultura y el talento manual.
+                      </li>
+                      <li class="flex items-center space-x-3">
+                        <i class="ti-time"></i>
+                        <span>9 am</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                        <i class="ti-calendar"></i>
+                        <span>29 de marzo</span>
+                      </li>
+                      <li class="flex items-center space-x-3">
+                        <i class="ti-location-pin"></i>
+                        <span>Av la Ribera S/N-Huanchaco, Trujillo-Perú</span>
+                      </li>
+                    </ul>
+                  </div>    
+              </div>
+          </div>
+      </div>
+        
+      </section>
+
+        <!-- **ASOCIADOS**** -->
+      <!-- TITULO: ASOCIADOS -->
+      <div class="w-full text-center text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-gray-800 mb-8" id="asociados">
+        <h2 class="uppercase tracking-wide">ASOCIADOS</h2>
+
+        <!-- Línea decorativa -->
+        <span
+          class="block border-t-4 border-yellow-400  w-[87px] lg:w-[107px] xl:w-[117px] mx-auto my-4"
+        ></span>
+      </div>
+      <!-- SECCIÓN DE RESTAURANTES -->
+      <section id="restaurantes" class="w-full py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-left mb-12">
+            <h2 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-800 text-left mb-4 uppercase">Restaurantes</h2>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Restaurante 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h3 class="text-xl font-semibold text-blue-900">RESTAURANTE - EL ANZUELO</h3>
+              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+              </svg> Av. Victor Larco 1050</p>
+              <p class="text-gray-600 mt-2">Teléfono</p>
+              <p class="text-blue-900 font-bold text-lg">949 892 347</p>
+              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+            </div>
+
+            <!-- Restaurante 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT SABOR A MAR</h3>
+              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+                </svg> Av. Victor Larco 1400</p>
+              <p class="text-gray-600 mt-2">Teléfono</p>
+              <p class="text-blue-900 font-bold text-lg">949 390 349</p>
+              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+            </div>
+            <!-- Restaurante 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT MIXTURA MARICIELO</h3>
+              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+                </svg> C/ Los Pinos 215</p>
+              <p class="text-gray-600 mt-2">Teléfono</p>
+              <p class="text-blue-900 font-bold text-lg">954 063 529</p>
+              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+            </div>
+            <!-- Restaurante 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT PESCADITO</h3>
+
+              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+                </svg> C/ Las Gardenias 510</p>
+              <p class="text-gray-600 mt-2">Teléfono</p>
+              <p class="text-blue-900 font-bold text-lg">986 284 912</p>
+              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+            </div>
+            <!-- Restaurante 5 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT DE LA OLA</h3>
+              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+                </svg> Av. Victor Larco 630</p>
+              <p class="text-gray-600 mt-2">Teléfono</p>
+              <p class="text-blue-900 font-bold text-lg">975 976 189</p>
+              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+            </div>
+            <!-- Restaurante 6 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT CASA RUSTICA</h3>
+              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+                </svg> Av. La Ribera 618</p>
+              <p class="text-gray-600 mt-2">Teléfono</p>
+              <p class="text-blue-900 font-bold text-lg">975 056 095</p>
+              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+            </div>
+            <!-- Restaurante 7 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT EL AGUAJE</h3>
+              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+                </svg> Sector La Poza</p>
+              <p class="text-gray-600 mt-2">Teléfono</p>
+              <p class="text-blue-900 font-bold text-lg">938 197 977</p>
+              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+            </div>
+            <!-- Restaurante 8 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT EL POSEIDON</h3>
+              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+              </svg> Calle union 230</p>
+            <p class="text-gray-600 mt-2">Teléfono</p>
+            <p class="text-blue-900 font-bold text-lg">970 703 205</p>
+            <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+          </div>
+          <!-- Restaurante 9 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-900">RESTAURANT EL CAPI</h3>
+            <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+              </svg> Av. Victor Larco 1460</p>
+            <p class="text-gray-600 mt-2">Teléfono</p>
+            <p class="text-blue-900 font-bold text-lg">949 390 349</p>
+            <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+          </div>
+          <!-- Restaurante 10 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-900">RESTAURANT PARADISE</h3>
+            <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+              </svg> Av. La Ribera 700</p>
+            <p class="text-gray-600 mt-2">Teléfono</p>
+            <p class="text-blue-900 font-bold text-lg">989 020 896</p>
+            <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+          </div>
+          <!-- Restaurante 11 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-900">RESTAURANT CANGREJO HUANCHAQUERO</h3>
+            <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+              </svg> Av. La Ribera 700</p>
+            <p class="text-gray-600 mt-2">Teléfono</p>
+            <p class="text-blue-900 font-bold text-lg">989 020 896</p>
+            <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+          </div>
+          <!-- Restaurante 12 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-900">RESTAURANT PERUCHON</h3>
+            <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+            </svg> Av. Victor Larco 1692</p>
+          <p class="text-gray-600 mt-2">Teléfono</p>
+          <p class="text-blue-900 font-bold text-lg">902 558 605</p>
+          <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+        </div>
+
+        <!-- Agrega los demás restaurantes aquí -->
+      </div>
+    </div>
+      </section>
+
+      <!-- SECCIÓN DE HOSPEDAJE -->
+      <section id="hospedaje" class="w-full py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-left mb-12">
+            <h2 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-800 text-left mb-4 uppercase">Hospedaje</h2>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Hotel 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h3 class="text-xl font-semibold text-blue-900">HOTEL PARADISE</h3>
+              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
+              </svg> Av. La Ribera 700</p>
+              <p class="text-gray-600 mt-2">Teléfono</p>
+              <p class="text-blue-900 font-bold text-lg">989 020 896</p>
+              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+            </div>
+
+            <!-- Agrega más hoteles aquí -->
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- ***********************FOOTER************************* -->
+      <!-- Subfooter -->
+      <section class="relative mx-auto w-full pt-9 mt-16 md:pt-14 text-white bg-[#335AA6] overflow-hidden shadow-2xl drop-shadow-[0_4px_3px_rgba(0,85,255,0.3)] z-80">
+        <!-- Fondo -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('/images/HCO5.jpg');"></div>
+
+        <!-- Degradado -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#335AA6] via-[#001f63] via-40% to-[#001f6393]"></div>
+
+        <!-- 1. Contenido -->
+        <div class="relative px-9 py-14 mx-auto md:p-16 flex flex-col space-y-12 md:flex-row md:justify-center md:space-y-0 md:gap-x-20 md:max-w-5xl ">
+          <!-- 1.1.Descipción -->
+          <div class="flex-1 min-w-[270px]">
+            <!-- Titulo de descripción -->
+            <h3 class="text-xl font-bold mb-4">
+              AHORA HUANCHACO
+            </h3>
+
+            <!--  -->
+            <p class="font-light text-base md:text-lg leading-9">
+              Es la asociación líder de hoteles, restaurantes y negocios afines en la icónica playa de Huanchaco. Impulsamos el turismo sostenible, la excelencia en servicios y el crecimiento del sector. 
+            </p>
+          </div>
+
+          <!-- 1.2. Información de contacto -->
+          <div class="flex-1">
+            <!-- Titulo de Contacto -->
+            <h3 class="text-xl font-bold mb-4">
+              CONTACTO
+            </h3>
+
+            <!-- Info de contacto -->
+            <address class="not-italic font-light text-base md:text-lg leading-9">
+              <ul class="space-y-4">
+                <li class="flex items-center space-x-3">
+                  <i class="ti-location-pin"></i>
+                  <span>Av la Ribera S/N-Huanchaco, Trujillo-Perú</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                  <i class="ti-mobile"></i>
+                    <span>+51 909891796</span>
+                </li>
+                <li class="flex items-center space-x-3 hover:text-blue-500">
+                  <i class="ti-email"></i>
+                  <a href="mailto:ahorahuanchaco@gmail.com">
+                    ahorahuanchaco@gmail.com
+                  </a>
+                </li>
+              </ul>
+              <!-- Redes sociales -->
+              <div class="flex items-center mt-9 space-x-4">
+                <a href="#" class="hover:text-blue-500 text-white">
+                  <i class="ti-facebook h-6 w-auto"></i>
+                </a>
+                <a href="#" class="hover:text-blue-500 text-white">
+                  <i class="ti-instagram h-6 w-auto "></i>
+                </a>
+                <a href="#" class="hover:text-blue-500 text-white">
+                  <i class="ti-linkedin h-6 w-auto "></i>
+                </a>                
+              </div>
+
+            </address>
+          </div>
+
+          <!-- 1.3. Explorar -->
+          <div class="flex-1 font-light text-base md:text-lg leading-9 min-w-[170px]">
+            <!-- Titulo de Explorar -->
+            <h3 class="text-xl font-bold mb-4">
+              EXPLORAR
+            </h3>
+
+            <!--  -->
+            <div>
+              <ul class="space-y-4">
+                <li>
+                  <a href="#" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">Inicio</a>
+                </li>
+                <li>
+                  <a href="#" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">Sobre Nosotros</a>
+                </li>
+                <li>
+                  <a href="#" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">Ruta Huanchaco</a>
+                </li>
+                <li>
+                  <a href="#" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">
+                    Asociados
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">Actividades</a>
+                </li>                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer class="w-full font-extralight text-sm md:text-base bg-[#335AA6] text-white py-4 px-6 flex items-center justify-between gap-y-4 flex-col md:flex-row">
+        <!-- Copyrigth -->
+        <div class="text-center">
+          © AHORA 2025. Todos los derechos reservados.
+        </div>
+        <!-- Idioma -->
+        <div class="flex space-x-3 items-center justify-center hover:text-blue-500">
+          <i class="ti-world"></i>
+          <span>
+          Español
+          </span>
+          <i class="ti-angle-up"></i>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <!--JAVASCRIPT-->
+    <script>
+      window.addEventListener("scroll", function() {
+        var header = document.getElementById("header");
+        var subnavbar = document.getElementById("subnavbar");
+    
+        if (window.scrollY > 50) {
+          header.classList.add("bg-white", "text-black", "shadow-md", "py-2");
+          header.classList.remove("bg-transparent", "text-white", "py-3");
+    
+          subnavbar.classList.add("hidden"); // Ocultar subnavegación
+        } else {
+          header.classList.add("bg-transparent", "text-white", "py-3");
+          header.classList.remove("bg-white", "text-black", "shadow-md", "py-2");
+    
+          subnavbar.classList.remove("hidden"); // Mostrar subnavegación
+        }
+      });
+
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll("[data-animate]");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("scale-110", "rotate-1");
+              } else {
+                entry.target.classList.remove("scale-110", "rotate-1");
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+    
+        images.forEach((img) => observer.observe(img));
+      });
+
+      AOS.init();
+    </script>
+  </body>
+</html>
+
