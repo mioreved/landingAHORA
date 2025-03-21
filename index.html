@@ -10,21 +10,18 @@
     <!-- JS -->
     <script src="/js/main.js"></script>
 
-
     <!-- ICONOS -->
     <link rel="stylesheet" href="/css/themify-icons.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
 
     <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,8 +32,6 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       /* Para poner custom css */
-
-      
     </style>
 
     <!-- CDN PARA CAROUSEL -->
@@ -47,21 +42,12 @@
   </head>
   <body class="bg-white font-[Poppins] text-gray-900 relative">
     <div class="">
-      <!-- PRELOADER -->
-      <!-- <div class="bg-preloader-white"></div>
-     <div class="preloader-white">
-       <div class="mainpreloader">
-       <span></span>
-       </div>
-     </div> -->
-      <!-- preloader end -->
 
       <!--**************************** HEADER************************** -->
-      <header id="header" class="w-full mx-auto fixed top-0 left-0 z-100 text-white bg-transparent transition-all duration-700">
-         <!-- Subnavegación -->
-        <div id="subnavbar" class="text-xs font-extralight py-3 px-24 transition-all duration-300">
+      <header id="header" class="w-full mx-auto fixed top-0 left-0 z-50 bg-transparent transition-all duration-700">
+        <!-- Subnavegación -->
+        <div id="subnavbar" class="text-xs font-extralight py-3 px-6 md:px-12 lg:px-16 transition-all duration-300 text-white">
           <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <!-- Contacto -->
             <div class="flex items-center space-x-5">
               <div class="space-x-2">
                 <i class="ti-mobile"></i>
@@ -72,17 +58,12 @@
                 <a href="mailto:ahorahuanchaco@gmail.com">ahorahuanchaco@gmail.com</a>
               </span>
             </div>
-            <!-- Redes sociales e Idioma -->
             <div class="flex items-center space-x-5">
-              <!-- IDIOMA -->
-              <div class="flex space-x-3 items-center justify-center hover:text-blue-500 cursor-pointer">
+              <!-- <div class="flex space-x-3 items-center hover:text-blue-500 cursor-pointer">
                 <i class="ti-world"></i>
-                <span>
-                Español
-                </span>
+                <span> Español </span>
                 <i class="ti-angle-down"></i>
-              </div>
-              <!-- Redes sociales -->
+              </div> -->
               <div class="flex space-x-4">
                 <a href="#" class="hover:text-blue-500"><span class="ti-facebook"></span></a>
                 <a href="#" class="hover:text-blue-500"><span class="ti-instagram"></span></a>
@@ -91,22 +72,37 @@
             </div>
           </div>
         </div>
-      
+        
         <!-- Barra de Navegación -->
-        <div class="px-24 pb-2">
-          <div class="max-w-7xl mx-auto flex justify-between items-center uppercase">
-            <a href="index.html">
-              <img src="/images/logo.png" width="618" height="746" alt="logo" class="h-12 w-auto logo" />
-            </a>
-            <nav class="hidden md:flex space-x-6">
-              <a href="#" class="hover:text-blue-500">Inicio</a>
-              <a href="#" class="hover:text-blue-500">Nosotros</a>
-              <a href="#" class="hover:text-blue-500">Ruta Huanchaco</a>
-              <a href="#" class="hover:text-blue-500">Asociados</a>
-              <a href="#" class="hover:text-blue-500">Actividades</a>
-            </nav>
-          </div>
+        <div id="navbar" class="transition-all duration-700 px-6 md:px-12 lg:px-16 pb-2 text-white flex items-center justify-between">
+          <a href="index.html">
+            <img src="/images/logo.png" alt="logo" class="h-12 w-auto" />
+          </a>
+          
+          <!-- Menú en pantallas grandes -->
+          <nav id="menu" class="hidden md:flex space-x-6">
+            <a href="#" class="hover:text-blue-500">Inicio</a>
+            <a href="#sobre-nosotros" class="hover:text-blue-500">Nosotros</a>
+            <a href="#ruta-huanchaco" class="hover:text-blue-500">Ruta Huanchaco</a>            
+            <a href="#actividades" class="hover:text-blue-500">Actividades</a>
+            <a href="#asociados" class="hover:text-blue-500">Asociados</a>
+          </nav>
+          
+          <!-- Botón de menú para móviles -->
+          <button id="menu-toggle" class="md:hidden text-black text-2xl">
+            <i id="icon-menu" class="ti-menu"></i>
+            <i id="icon-close" class="ti-close hidden"></i>
+          </button>
         </div>
+        
+        <!-- Menú móvil -->
+        <nav id="mobile-menu" class="hidden fixed top-[64px] left-0 w-full h-[calc(100vh-64px)] bg-white flex-col items-center justify-center space-y-6 transition-all duration-500">
+          <a href="#" class="py-2 hover:text-blue-500">Inicio</a>
+          <a href="#sobre-nosotros" class="hover:text-blue-500">Nosotros</a>
+          <a href="#ruta-huanchaco" class="hover:text-blue-500">Ruta Huanchaco</a>            
+          <a href="#actividades" class="hover:text-blue-500">Actividades</a>
+          <a href="#asociados" class="hover:text-blue-500">Asociados</a>
+        </nav>
       </header>
       
 
@@ -116,11 +112,11 @@
         <!-- HERO CONTAINER -->
         <div
           class="text-left w-[90%] h-screen max-w-7xl mx-auto whitespace-normal flex flex-col items-start justify-center">
-          <h1 class="text-3xl md:text-4xl lg:text-5xl font-normal mb-4 tracking-wide mx-4 sm:mx-8 md:mx-10 lg:mx-12 xl:mx-16">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal mb-4 tracking-wide mx-4 sm:mx-8 md:mx-10 lg:mx-12 xl:mx-16">
             ASOCIACIÓN DE HOTELES, RESTAURANTES Y AFINES DE HUANCHACO
           </h1>
 
-          <p class="text-xl md:text-2xl mb-6 font-normal uppercase mx-4 sm:mx-8 md:mx-10 lg:mx-12 xl:mx-16">
+          <p class="text-lg sm:text-xl md:text-2xl mb-6 font-normal uppercase mx-4 sm:mx-8 md:mx-10 lg:mx-12 xl:mx-16">
             Recorre nuestra Ruta Gastronómica y Turística
           </p>
 
@@ -134,7 +130,7 @@
       </section>
 
       <!-- ***********************QUIENES SOMOS************************* -->
-      <section class="mt-16 mb-16 w-full py-12">
+      <section id="sobre-nosotros" class="mt-16 mb-16 w-full py-12">
         <!-- TITULO: ¿QUIENES SOMOS? -->
         <div class="w-full text-center text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-gray-800 mb-8">
           <h2 class="uppercase">SOBRE NOSOTROS</h2>
@@ -200,7 +196,7 @@
       </section>
 
 
-      <!-- ***********************ASOCIADOS************************* -->
+      <!-- ***********************CIFRAS************************* -->
       <section id="cifras" class="mt-16 mb-24 w-full relative bg-[url('/images/ondas.svg')] bg-cover bg-center">        
         
         <!-- <div class="bg-gradient-to-r from-blue-700 to-blue-950 w-full"> -->
@@ -234,11 +230,6 @@
           
         
       </section>
-
-
-
-
-
 
       
       <!-- ***********************RUTA HUANCHACO************************* -->
@@ -355,8 +346,8 @@
         </div>
       </section> 
 
-<!-- ***********************ACTIVIDADES*************************  --> 
-      <section id="ruta-huanchaco" class="mt-16 mb-16 w-full max-w-7xl mx-auto">
+      <!-- ***********************ACTIVIDADES*************************  --> 
+      <section id="actividades" class="mt-16 mb-16 w-full max-w-7xl mx-auto">
         <!-- TITULO: PROXIMAS ACTIVIDADES -->
         <div class="w-full text-center text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-gray-800 mb-8">
           <h2 class="uppercase">PRÓXIMAS ACTIVIDADES</h2>
@@ -485,176 +476,556 @@
         
       </section>
 
-        <!-- **ASOCIADOS**** -->
-      <!-- TITULO: ASOCIADOS -->
-      <div class="w-full text-center text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-gray-800 mb-8" id="asociados">
-        <h2 class="uppercase tracking-wide">ASOCIADOS</h2>
+      <!-- ***********************ASOCIADOS*************************  --> 
+      <section id="asociados" class="mt-16 mb-16 w-full max-w-7xl mx-auto">
+        <!-- TITULO: ASOCIADOS -->
+        <div class="w-full text-center text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-gray-800 mb-8" id="asociados">
+          <h2 class="uppercase tracking-wide">ASOCIADOS</h2>
 
-        <!-- Línea decorativa -->
-        <span
-          class="block border-t-4 border-yellow-400  w-[87px] lg:w-[107px] xl:w-[117px] mx-auto my-4"
-        ></span>
-      </div>
-      <!-- SECCIÓN DE RESTAURANTES -->
-      <section id="restaurantes" class="w-full py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="text-left mb-12">
-            <h2 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-800 text-left mb-4 uppercase">Restaurantes</h2>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            <!-- Restaurante 1 -->
-            <div class="bg-white shadow-lg rounded-lg p-6">
-              <h3 class="text-xl font-semibold text-blue-900">RESTAURANTE - EL ANZUELO</h3>
-              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-              </svg> Av. Victor Larco 1050</p>
-              <p class="text-gray-600 mt-2">Teléfono</p>
-              <p class="text-blue-900 font-bold text-lg">949 892 347</p>
-              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
-            </div>
-
-            <!-- Restaurante 2 -->
-            <div class="bg-white shadow-lg rounded-lg p-6">
-              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT SABOR A MAR</h3>
-              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-                </svg> Av. Victor Larco 1400</p>
-              <p class="text-gray-600 mt-2">Teléfono</p>
-              <p class="text-blue-900 font-bold text-lg">949 390 349</p>
-              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
-            </div>
-            <!-- Restaurante 3 -->
-            <div class="bg-white shadow-lg rounded-lg p-6">
-              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT MIXTURA MARICIELO</h3>
-              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-                </svg> C/ Los Pinos 215</p>
-              <p class="text-gray-600 mt-2">Teléfono</p>
-              <p class="text-blue-900 font-bold text-lg">954 063 529</p>
-              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
-            </div>
-            <!-- Restaurante 4 -->
-            <div class="bg-white shadow-lg rounded-lg p-6">
-              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT PESCADITO</h3>
-
-              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-                </svg> C/ Las Gardenias 510</p>
-              <p class="text-gray-600 mt-2">Teléfono</p>
-              <p class="text-blue-900 font-bold text-lg">986 284 912</p>
-              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
-            </div>
-            <!-- Restaurante 5 -->
-            <div class="bg-white shadow-lg rounded-lg p-6">
-              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT DE LA OLA</h3>
-              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-                </svg> Av. Victor Larco 630</p>
-              <p class="text-gray-600 mt-2">Teléfono</p>
-              <p class="text-blue-900 font-bold text-lg">975 976 189</p>
-              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
-            </div>
-            <!-- Restaurante 6 -->
-            <div class="bg-white shadow-lg rounded-lg p-6">
-              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT CASA RUSTICA</h3>
-              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-                </svg> Av. La Ribera 618</p>
-              <p class="text-gray-600 mt-2">Teléfono</p>
-              <p class="text-blue-900 font-bold text-lg">975 056 095</p>
-              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
-            </div>
-            <!-- Restaurante 7 -->
-            <div class="bg-white shadow-lg rounded-lg p-6">
-              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT EL AGUAJE</h3>
-              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-                </svg> Sector La Poza</p>
-              <p class="text-gray-600 mt-2">Teléfono</p>
-              <p class="text-blue-900 font-bold text-lg">938 197 977</p>
-              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
-            </div>
-            <!-- Restaurante 8 -->
-            <div class="bg-white shadow-lg rounded-lg p-6">
-              <h3 class="text-xl font-semibold text-blue-900">RESTAURANT EL POSEIDON</h3>
-              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-              </svg> Calle union 230</p>
-            <p class="text-gray-600 mt-2">Teléfono</p>
-            <p class="text-blue-900 font-bold text-lg">970 703 205</p>
-            <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
-          </div>
-          <!-- Restaurante 9 -->
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <h3 class="text-xl font-semibold text-blue-900">RESTAURANT EL CAPI</h3>
-            <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-              </svg> Av. Victor Larco 1460</p>
-            <p class="text-gray-600 mt-2">Teléfono</p>
-            <p class="text-blue-900 font-bold text-lg">949 390 349</p>
-            <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
-          </div>
-          <!-- Restaurante 10 -->
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <h3 class="text-xl font-semibold text-blue-900">RESTAURANT PARADISE</h3>
-            <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-              </svg> Av. La Ribera 700</p>
-            <p class="text-gray-600 mt-2">Teléfono</p>
-            <p class="text-blue-900 font-bold text-lg">989 020 896</p>
-            <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
-          </div>
-          <!-- Restaurante 11 -->
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <h3 class="text-xl font-semibold text-blue-900">RESTAURANT CANGREJO HUANCHAQUERO</h3>
-            <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-              </svg> Av. La Ribera 700</p>
-            <p class="text-gray-600 mt-2">Teléfono</p>
-            <p class="text-blue-900 font-bold text-lg">989 020 896</p>
-            <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
-          </div>
-          <!-- Restaurante 12 -->
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <h3 class="text-xl font-semibold text-blue-900">RESTAURANT PERUCHON</h3>
-            <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-            </svg> Av. Victor Larco 1692</p>
-          <p class="text-gray-600 mt-2">Teléfono</p>
-          <p class="text-blue-900 font-bold text-lg">902 558 605</p>
-          <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+          <!-- Línea decorativa -->
+          <span
+            class="block border-t-4 border-yellow-400  w-[87px] lg:w-[107px] xl:w-[117px] mx-auto my-4"
+          ></span>
         </div>
 
-        <!-- Agrega los demás restaurantes aquí -->
-      </div>
-    </div>
-      </section>
+        <!-- HOSPEDAJES -->
+        <div id="restaurantes" class="w-full py-16 bg-white">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="text-left mb-12">
+              <h2 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-800 text-left mb-4 uppercase">Restaurantes</h2>
+            </div>
+  
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              <!-- Restaurante 0 -->
+              <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                <!-- Imagen superior -->
+                <div class="relative w-full h-36 overflow-hidden">
+                  <img src="/images/restaurante.jpg" alt="Restaurante El Anzuelo" class="object-cover w-full h-full rounded-t-sm">
+                </div>
+              
+                <!-- Contenido -->
+                <div class="mt-2 text-center p-5">
+                  <!-- Nombre del Restaurante -->
+                  <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                    <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                    PARADISE
+                  </h3>
+              
+                  <!-- Dirección -->
+                  <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                    <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                    <span class="ml-1">Av La Rivera 700, Huanchaco, Peru</span>
+                  </p>
+              
+                  <!-- Teléfono -->
+                  <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                    <i class="ti ti-mobile text-blue-500"></i>
+                    <span class="ml-1">989 020 896</span>
+                  </p>
+              
+                  <!-- Botón Contactar -->
+                  <a href="#" 
+                    class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                    Contactar 
+                    <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                  </a>
+                </div>
+              </div>
+                         
 
-      <!-- SECCIÓN DE HOSPEDAJE -->
-      <section id="hospedaje" class="w-full py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="text-left mb-12">
-            <h2 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-800 text-left mb-4 uppercase">Hospedaje</h2>
+                <!-- Restaurante 1 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/restaurante2.jpg" alt="Restaurante El Anzuelo" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                      EL ANZUELO
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Av La Rivera 500, Huanchaco, Peru</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">987 654 321</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Restaurante 2 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/restaurante.jpg" alt="Restaurante Ocean View" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                      OCEAN VIEW
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Av Larco 250, Huanchaco, Peru</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">976 543 210</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Restaurante 3 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/restaurante2.jpg" alt="Restaurante La Ola" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                      LA OLA
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Av El Sol 320, Huanchaco, Peru</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">965 432 109</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Restaurante 4 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/restaurante2.jpg" alt="Restaurante Sunset" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                      SUNSET
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Av Costanera 410, Huanchaco, Peru</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">954 321 098</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Restaurante 5 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/restaurante2.jpg" alt="Restaurante Mar Azul" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                      MAR AZUL
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Av Pacífico 520, Huanchaco, Peru</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">943 210 987</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                  <!-- Restaurante 6 -->
+                  <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                    <div class="relative w-full h-36 overflow-hidden">
+                      <img src="/images/restaurante2.jpg" alt="Restaurante La Barca" class="object-cover w-full h-full rounded-t-sm">
+                    </div>
+                    <div class="mt-2 text-center p-5">
+                      <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                        <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                        LA BARCA
+                      </h3>
+                      <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                        <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                        <span class="ml-1">Calle Los Corales 101, Huanchaco, Peru</span>
+                      </p>
+                      <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                        <i class="ti ti-mobile text-blue-500"></i>
+                        <span class="ml-1">912 345 678</span>
+                      </p>
+                      <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                        Contactar 
+                        <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <!-- Restaurante 7 -->
+                  <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                    <div class="relative w-full h-36 overflow-hidden">
+                      <img src="/images/restaurante.jpg" alt="Restaurante El Faro" class="object-cover w-full h-full rounded-t-sm">
+                    </div>
+                    <div class="mt-2 text-center p-5">
+                      <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                        <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                        EL FARO
+                      </h3>
+                      <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                        <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                        <span class="ml-1">Av El Faro 215, Huanchaco, Peru</span>
+                      </p>
+                      <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                        <i class="ti ti-mobile text-blue-500"></i>
+                        <span class="ml-1">934 567 890</span>
+                      </p>
+                      <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                        Contactar 
+                        <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <!-- Restaurante 8 -->
+                  <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                    <div class="relative w-full h-36 overflow-hidden">
+                      <img src="/images/restaurante2.jpg" alt="Restaurante Brisas del Mar" class="object-cover w-full h-full rounded-t-sm">
+                    </div>
+                    <div class="mt-2 text-center p-5">
+                      <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                        <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                        BRISAS DEL MAR
+                      </h3>
+                      <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                        <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                        <span class="ml-1">Jr. Las Olas 320, Huanchaco, Peru</span>
+                      </p>
+                      <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                        <i class="ti ti-mobile text-blue-500"></i>
+                        <span class="ml-1">945 678 901</span>
+                      </p>
+                      <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                        Contactar 
+                        <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <!-- Restaurante 9 -->
+                  <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                    <div class="relative w-full h-36 overflow-hidden">
+                      <img src="/images/restaurante.jpg" alt="Restaurante Mariscos del Norte" class="object-cover w-full h-full rounded-t-sm">
+                    </div>
+                    <div class="mt-2 text-center p-5">
+                      <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                        <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                        MARISCOS DEL NORTE
+                      </h3>
+                      <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                        <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                        <span class="ml-1">Paseo de la Playa 450, Huanchaco, Peru</span>
+                      </p>
+                      <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                        <i class="ti ti-mobile text-blue-500"></i>
+                        <span class="ml-1">956 789 012</span>
+                      </p>
+                      <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                        Contactar 
+                        <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <!-- Restaurante 10 -->
+                  <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                    <div class="relative w-full h-36 overflow-hidden">
+                      <img src="/images/restaurante2.jpg" alt="Restaurante El Pescador" class="object-cover w-full h-full rounded-t-sm">
+                    </div>
+                    <div class="mt-2 text-center p-5">
+                      <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                        <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                        EL PESCADOR
+                      </h3>
+                      <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                        <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                        <span class="ml-1">Av Los Delfines 520, Huanchaco, Peru</span>
+                      </p>
+                      <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                        <i class="ti ti-mobile text-blue-500"></i>
+                        <span class="ml-1">967 890 123</span>
+                      </p>
+                      <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                        Contactar 
+                        <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Restaurante 11 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/restaurante.jpg" alt="Restaurante Costa Azul" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                      COSTA AZUL
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Malecón Grau 150, Huanchaco, Perú</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">978 654 321</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Restaurante 12 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/restaurante2.jpg" alt="Restaurante El Remanso" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                      EL REMANSO
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Calle El Sol 220, Huanchaco, Perú</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">987 123 456</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Restaurante 13 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/restaurante2.jpg" alt="Restaurante Las Olas" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                      LAS OLAS
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Av. Pacífico 180, Huanchaco, Perú</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">964 987 654</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Restaurante 14 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/restaurante.jpg" alt="Restaurante Sabor Marino" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                      SABOR MARINO
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Jr. La Playa 99, Huanchaco, Perú</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">912 345 987</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Restaurante 15 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/restaurante.jpg" alt="Restaurante El Navegante" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-restaurant text-yellow-500 text-lg"></i>
+                      EL NAVEGANTE
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Calle Los Pescadores 300, Huanchaco, Perú</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">923 456 789</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+              
+            </div>
           </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            <!-- Hotel 1 -->
-            <div class="bg-white shadow-lg rounded-lg p-6">
-              <h3 class="text-xl font-semibold text-blue-900">HOTEL PARADISE</h3>
-              <p class="text-gray-600 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 2.962 2.79 6.667 5.125 9.21.734.835 1.491 1.62 2.14 2.29.649-.67 1.406-1.455 2.14-2.29C16.21 15.667 19 11.962 19 9c0-3.866-3.134-7-7-7zM12 11a2 2 0 100-4 2 2 0 000 4z"/>
-              </svg> Av. La Ribera 700</p>
-              <p class="text-gray-600 mt-2">Teléfono</p>
-              <p class="text-blue-900 font-bold text-lg">989 020 896</p>
-              <a href="#" class="text-yellow-500 font-semibold mt-4 inline-block">CONTACTAR →</a>
+        </div>
+      
+        <!-- SECCIÓN DE HOSPEDAJE -->
+        <div id="hospedajes" class="w-full py-16 bg-white">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="text-left mb-12">
+              <h2 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-800 text-left mb-4 uppercase">Hospedaje</h2>
             </div>
 
-            <!-- Agrega más hoteles aquí -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              <!-- Hotel 1 -->
+                <!-- Hotel 1 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/hotel.jpg" alt="Hotel Brisas de Huanchaco" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-hotel text-yellow-500 text-lg"></i>
+                      PARADISE
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Av. La Rivera 456, Huanchaco, Perú</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">987 654 321</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Hotel 2 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/hotel2.jpg" alt="Hotel Pacifico" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-hotel text-yellow-500 text-lg"></i>
+                      HOTEL PACÍFICO
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Malecón Grau 200, Huanchaco, Perú</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">912 345 678</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Hotel 3 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/hotel2.jpg" alt="Hotel Vista Mar" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-hotel text-yellow-500 text-lg"></i>
+                      VISTA MAR
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Jr. Las Palmeras 50, Huanchaco, Perú</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">945 678 321</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Hotel 4 -->
+                <div class="bg-white shadow-md rounded-sm transition-all duration-300 hover:scale-103 hover:shadow-2xl hover:-translate-y-1 border border-blue-100">
+                  <div class="relative w-full h-36 overflow-hidden">
+                    <img src="/images/hotel.jpg" alt="Hotel Playa Sol" class="object-cover w-full h-full rounded-t-sm">
+                  </div>
+                  <div class="mt-2 text-center p-5">
+                    <h3 class="text-xl font-bold text-blue-900 flex items-center justify-center gap-2">
+                      <i class="ti ti-hotel text-yellow-500 text-lg"></i>
+                      HOTEL PLAYA SOL
+                    </h3>
+                    <p class="text-gray-600 flex items-baseline justify-center mt-1 text-sm">
+                      <!-- <i class="ti ti-location-pin text-red-500"></i> -->
+                      <span class="ml-1">Av. Los Delfines 99, Huanchaco, Perú</span>
+                    </p>
+                    <p class="text-blue-900 font-semibold mt-2 text-sm flex items-center justify-center">
+                      <i class="ti ti-mobile text-blue-500"></i>
+                      <span class="ml-1">998 321 456</span>
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center gap-2 px-4 py-2 text-yellow-500 font-semibold text-sm rounded-md transition-all duration-300 ease-in-out border border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-md hover:shadow-lg hover:-translate-y-1">
+                      Contactar 
+                      <i class="ti ti-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </section>
-
-
-
+      
+      
       <!-- ***********************FOOTER************************* -->
       <!-- Subfooter -->
       <section class="relative mx-auto w-full pt-9 mt-16 md:pt-14 text-white bg-[#335AA6] overflow-hidden shadow-2xl drop-shadow-[0_4px_3px_rgba(0,85,255,0.3)] z-80">
@@ -734,19 +1105,19 @@
                   <a href="#" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">Inicio</a>
                 </li>
                 <li>
-                  <a href="#" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">Sobre Nosotros</a>
+                  <a href="#sobre-nosotros" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">Sobre Nosotros</a>
                 </li>
                 <li>
-                  <a href="#" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">Ruta Huanchaco</a>
-                </li>
+                  <a href="#ruta-huanchaco" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">Ruta Huanchaco</a>
+                </li>                
                 <li>
-                  <a href="#" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">
+                  <a href="#actividades" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">Actividades</a>
+                </li>    
+                <li>
+                  <a href="#asociados" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">
                     Asociados
                   </a>
-                </li>
-                <li>
-                  <a href="#" class="inline-block hover:text-blue-500 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:translate-x-2">Actividades</a>
-                </li>                
+                </li>            
               </ul>
             </div>
           </div>
@@ -761,36 +1132,68 @@
           © AHORA 2025. Todos los derechos reservados.
         </div>
         <!-- Idioma -->
-        <div class="flex space-x-3 items-center justify-center hover:text-blue-500">
+        <!-- <div class="flex space-x-3 items-center justify-center hover:text-blue-500">
           <i class="ti-world"></i>
           <span>
           Español
           </span>
           <i class="ti-angle-up"></i>
-        </div>
+        </div> -->
       </footer>
     </div>
 
-
-
     <!--JAVASCRIPT-->
     <script>
-      window.addEventListener("scroll", function() {
+      function updateNavbar() {
         var header = document.getElementById("header");
         var subnavbar = document.getElementById("subnavbar");
+        var navbar = document.getElementById("navbar");
     
-        if (window.scrollY > 50) {
-          header.classList.add("bg-white", "text-black", "shadow-md", "py-2");
-          header.classList.remove("bg-transparent", "text-white", "py-3");
+        var isScrolled = window.scrollY > 50;
+        var isSmallScreen = window.innerWidth < 1024; // Si el ancho de la pantalla es menor a lg (1024px)
+        var isZoomed = window.outerWidth / window.innerWidth < 0.9; // Detectar zoom (aprox. 125% o más)
+    
+        if (isScrolled || isSmallScreen || isZoomed) {
+          header.classList.add("bg-white", "shadow-md", "py-2");
+          header.classList.remove("bg-transparent", "py-3");
     
           subnavbar.classList.add("hidden"); // Ocultar subnavegación
+    
+          navbar.classList.add("text-black"); // Solo cambia las letras de la navbar
+          navbar.classList.remove("text-white");
         } else {
-          header.classList.add("bg-transparent", "text-white", "py-3");
-          header.classList.remove("bg-white", "text-black", "shadow-md", "py-2");
+          header.classList.add("bg-transparent", "py-3");
+          header.classList.remove("bg-white", "shadow-md", "py-2");
     
           subnavbar.classList.remove("hidden"); // Mostrar subnavegación
+    
+          navbar.classList.add("text-white"); // Restaurar color original de la navbar
+          navbar.classList.remove("text-black");
         }
+      }
+    
+      window.addEventListener("scroll", updateNavbar);
+      window.addEventListener("resize", updateNavbar);
+      updateNavbar(); // Llamar la función al cargar la página
+
+
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+        var mobileMenu = document.getElementById("mobile-menu");
+        var iconMenu = document.getElementById("icon-menu");
+        var iconClose = document.getElementById("icon-close");
+        
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex"); // Usamos flex para mostrar el menú en columna
+        iconMenu.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
       });
+
+
+
+
+
+
+
 
 
       document.addEventListener("DOMContentLoaded", function () {
